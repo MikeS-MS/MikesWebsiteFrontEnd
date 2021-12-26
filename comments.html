@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mike</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="comments.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="post-frame">
+        <h1 class="post-text">Comments</h1>
+        <div class="post-divider"></div>
+        <div id="comments"></div>
+        <h1 class="post-text">Leave a Comment</h1>
+        <div class="post-divider"></div>
+        <div>
+            <form id="add-comment">
+                <label for="fname" class="post-text">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+                <label for="lname" class="post-text">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+                <label for="comment" class="post-text">Comment:</label><br>
+                <textarea id="comment" name="comment" rows="4" cols="50"></textarea><br>
+                <button type="reset" onclick="AddComment()">Comment</button>
+            </form>
+        </div>
+        <div class="filling-contact"></div>
+        <!-- <button type="button" onclick=ResetComments()>Reset comments</div> -->
+    </div>
+    <div class="footer">
+        <!-- Menu button -->
+        <div class="menu" onclick="ToggleOverviewAnim()">
+            <!-- Cross that shows when the hamburger icon animation finishes  -->
+            <div class="cross">
+                <div id="cross-left" class="cross-bar"></div>
+                <div id="cross-right" class="cross-bar"></div>
+            </div>
+            <!-- Hamburger style button -->
+            <div class="menu-button">
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+                <div class="menu-bar"></div>
+            </div>
+        </div>
+        <!-- Site logo -->
+        <div class="logo">
+            <a href="index.html">
+                <h1>Mike</h1>
+            </a>
+        </div>
+    </div>
+    <!-- Menu tabs -->
+    <div id="menu-overview" class="menu-overview">
+        <a href="index.html">
+            <img id="home" src="resources/icons/home.png" alt="home icon">
+            <div class="menu-text">Home</div>
+        </a>
+        <div class="divider"></div>
+        <a href="gallery.html">
+            <img id="gallery" src="resources/icons/gallery.png" alt="home icon">
+            <div class="menu-text">Gallery</div>
+        </a>
+        <div class="divider"></div>
+        <a href="comments.html">
+            <img id="comments" src="resources/icons/comments.png" alt="comments icon">
+            <div class="menu-text">Comments</div>
+        </a>
+        <div class="divider" style="margin-right: 20px"></div>
+        <a class="dark-mode-button-outline" onclick="DarkMode()">
+            <span class="dark-mode-button-circle"></span>
+        </a>
+        <div id="dark-mode-text" class="menu-text">Dark Mode</div>
+        <div class="divider"></div>
+    </div>
+    <script src="scripts/functionality.js"></script>
+    <script src="scripts/comments.js"></script>
+</body>
+
+</html>

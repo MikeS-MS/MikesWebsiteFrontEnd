@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mike</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <!-- Main body -->
+    <div class="body">
+        <!-- Main content/grid with scroll -->
+        <div class="image-scroll">
+            <!-- Frame 1 -->
+            <div class="picture-frame">
+                <!-- Clickable image leading to post page -->
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=1" alt="thumbnail">
+                </a>
+                <!-- Share buttons overlay -->
+                <div class="overlay">
+                    <!-- Twitter share button -->
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <!-- Facebook Share button -->
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <!-- Title of post -->
+                <h4 id="title1" class="thumbnail-title thumbnail-text">a</h4>
+                <!-- Description of post -->
+                <p id="description1" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=2" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title2" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description2" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=3" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title3" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description3" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=4" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title4" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description4" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=5" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title5" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description5" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=6" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title6" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description6" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=7" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title7" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description7" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=8" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title8" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description8" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=9" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title9" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description9" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=10" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title10" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description10" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=11" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title11" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description11" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=12" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title12" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description12" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=13" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title13" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description13" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=14" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title14" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description14" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=15" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title15" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description15" class="short-description thumbnail-text">description</p>
+            </div>
+            <div class="picture-frame">
+                <a class="thumbnail">
+                    <img src="https://picsum.photos/1920/1080?random=16" alt="thumbnail">
+                </a>
+                <div class="overlay">
+                    <div class="twitter-share">
+                        <a onclick="window.open('https://twitter.com/intent/tweet?text=Come%20look%20at%20this%20post%20on%20PicRoll!%20/content.html');">
+                            <img src="https://image.flaticon.com/icons/png/512/124/124021.png" alt="twitter logo">
+                        </a>
+                    </div>
+                    <div class="facebook-share">
+                        <a onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href),'facebook-share-dialog','width=626,height=436');return false;">
+                            <img src="https://images.squarespace-cdn.com/content/v1/54da6a67e4b09d1727ef4350/1501937173497-QAHHV3SX7K9CLJJMLYGA/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXHo_8CK9SnlcV2kbFodiP5bD3dB3UuPmjUQ5AcQK7S0bSexTd1-frD7527z4SM9QQ/facebook+logo+png+transparent+background.png"
+                                alt="facebook logo">
+                        </a>
+                    </div>
+                </div>
+                <h4 id="title16" class="thumbnail-title thumbnail-text">a</h4>
+                <p id="description16" class="short-description thumbnail-text">description</p>
+            </div>
+        </div>
+        <!-- Menu navbar -->
+        <div class="footer">
+            <!-- Menu button -->
+            <div class="menu" onclick="ToggleOverviewAnim()">
+                <!-- Cross that shows when the hamburger icon animation finishes  -->
+                <div class="cross">
+                    <div id="cross-left" class="cross-bar"></div>
+                    <div id="cross-right" class="cross-bar"></div>
+                </div>
+                <!-- Hamburger style button -->
+                <div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                    <div class="menu-bar"></div>
+                </div>
+            </div>
+            <!-- Site logo -->
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Mike</h1>
+                </a>
+            </div>
+        </div>
+        <!-- Menu tabs -->
+        <div id="menu-overview" class="menu-overview">
+            <a href="index.html">
+                <img id="home" src="resources/icons/home.png" alt="home icon">
+                <div class="menu-text">Home</div>
+            </a>
+            <div class="divider"></div>
+            <a href="gallery.html">
+                <img id="gallery" src="resources/icons/gallery.png" alt="home icon">
+                <div class="menu-text">Gallery</div>
+            </a>
+            <div class="divider"></div>
+            <a href="comments.html">
+                <img id="comments" src="resources/icons/comments.png" alt="comments icon">
+                <div class="menu-text">Comments</div>
+            </a>
+            <div class="divider" style="margin-right: 20px"></div>
+            <a class="dark-mode-button-outline" onclick="DarkMode()">
+                <span class="dark-mode-button-circle"></span>
+            </a>
+            <div id="dark-mode-text" class="menu-text">Dark Mode</div>
+            <div class="divider"></div>
+        </div>
+    </div>
+    <script src="scripts/functionality.js"></script>
+    <script src="scripts/indexSetup.js"></script>
+</body>
+
+</html>
